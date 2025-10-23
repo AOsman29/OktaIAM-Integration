@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dashboard - Okta IAM Demo</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #eef2f7;
+        margin: 0;
+        padding: 2rem;
+        color: #333;
+      }
+      header {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        background: #004aad;
+        color: white;
+        padding: 1rem 2rem;
+        border-radius: 8px;
+      }
+      h1 {
+        margin: 0;
+      }
+      button {
+        background: white;
+        color: #004aad;
+        border: none;
+        padding: 0.5rem 1rem;
+        border-radius: 5px;
+        cursor: pointer;
+        font-weight: bold;
+      }
+      button:hover {
+        background: #f0f0f0;
+      }
+      main {
+        margin-top: 2rem;
+        text-align: center;
+      }
+      .card {
+        background: white;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        padding: 2rem;
+        display: inline-block;
+        text-align: left;
+        max-width: 400px;
+      }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Okta IAM Demo Dashboard</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2>Welcome 👋</h2>
+        <p>You’ve successfully authenticated via Okta!</p>
+        <p>
+          This secure dashboard represents a protected area accessible only to
+          verified users.
+        </p>
+        <ul>
+          <li>✅ Secure login using OAuth2 / OpenID Connect</li>
+          <li>✅ FastAPI backend integration</li>
+          <li>✅ Redirect-based authentication flow</li>
+        </ul>
+      </div>
+    </main>
+
+    <script>
+      function logout() {
+        alert(
+          "Demo logout: Normally this would revoke tokens or clear session cookies."
+        );
+        window.location.href = "/secure/login.html";
+      }
+    </script>
+  </body>
+</html>

@@ -1,0 +1,5 @@
+# .env.example
+OKTA_CLIENT_ID=your_okta_client_id_here
+OKTA_CLIENT_SECRET=your_okta_client_secret_here
+OKTA_ISSUER_URL=https://yourorg.okta.com/oauth2/default
+OKTA_REDIRECT_URI=http://localhost:8000/api/okta/callback

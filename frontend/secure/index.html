@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Secure Area - Okta IAM Demo</title>
+    <style>
+      body {
+        font-family: "Segoe UI", sans-serif;
+        background: #f5f6fa;
+        margin: 0;
+        padding: 0;
+        display: flex;
+        flex-direction: column;
+        min-height: 100vh;
+      }
+
+      header {
+        background-color: #004aad;
+        color: white;
+        padding: 1rem 2rem;
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+
+      header h1 {
+        margin: 0;
+        font-size: 1.5rem;
+      }
+
+      main {
+        flex: 1;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+      }
+
+      .card {
+        background: white;
+        padding: 2rem;
+        border-radius: 10px;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+        text-align: center;
+        max-width: 400px;
+      }
+
+      .card h2 {
+        color: #004aad;
+      }
+
+      .card p {
+        color: #333;
+      }
+
+      button {
+        background: #004aad;
+        color: white;
+        border: none;
+        padding: 0.75rem 1.25rem;
+        border-radius: 6px;
+        font-weight: bold;
+        cursor: pointer;
+        margin-top: 1rem;
+        transition: background 0.3s;
+      }
+
+      button:hover {
+        background: #00337f;
+      }
+
+      footer {
+        background: #004aad;
+        color: white;
+        text-align: center;
+        padding: 0.75rem 0;
+        font-size: 0.9rem;
+      }
+    </style>
+  </head>
+
+  <body>
+    <header>
+      <h1>Okta IAM Secure Portal</h1>
+      <button onclick="logout()">Logout</button>
+    </header>
+
+    <main>
+      <div class="card">
+        <h2>Welcome 👋</h2>
+        <p>
+          You have successfully logged in using Okta! This page represents a
+          protected section of your web application.
+        </p>
+        <ul style="text-align: left; color: #444">
+          <li>✅ FastAPI backend integration</li>
+          <li>✅ OAuth2 + OpenID Connect flow</li>
+          <li>✅ Demonstrates enterprise IAM concepts</li>
+        </ul>
+      </div>
+    </main>
+
+    <footer>Okta IAM Demo | FastAPI Integration © 2025</footer>
+
+    <script>
+      function logout() {
+        alert(
+          "Demo logout — in production, this would revoke tokens or clear sessions."
+        );
+        window.location.href = "/index.html";
+      }
+    </script>
+  </body>
+</html>
