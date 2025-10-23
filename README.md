@@ -2,8 +2,8 @@
 
 ### Secure Authentication using FastAPI + Okta OAuth2 + OpenID Connect
 
-![Okta Demo Screenshot](images/okta-login.png)
-_A simple demo showing Okta-hosted login integration with FastAPI backend._
+![Okta Demo Screenshot](/OktaIAM-Integration*10_23_2025/OktaIAM-Integration/images/Screenshot%202025-10-23%20at%203.23.47 PM.png)
+\_A simple demo showing Okta-hosted login integration with FastAPI backend.*
 
 ---
 
