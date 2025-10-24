@@ -174,6 +174,5 @@ Zero-Trust Architects
 👨‍💻 Author
 
 Developed by: Abdalla Osman
-🎯 Aspiring IAM & Cloud Security Engineer
 🔗 LinkedIn
 • GitHub
