@@ -63,6 +63,7 @@ After authentication, Okta returns an authorization code to the backend, which e
 
 ### 🧱 Project Structure
 
+'''
 OktaIAM-Integration/
 │
 ├── backend/
@@ -83,6 +84,7 @@ OktaIAM-Integration/
 │
 ├── LICENSE
 └── README.md
+'''
 
 ---
 
