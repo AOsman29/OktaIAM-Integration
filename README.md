@@ -1,4 +1,4 @@
-# 🔐 Okta Identity & Access Management (IAM) Demo
+#  Okta Identity & Access Management (IAM) Demo
 
 ### Secure Authentication using FastAPI + Okta OAuth2 + OpenID Connect
 
@@ -7,21 +7,21 @@
 
 ---
 
-### 🧭 Overview
+###  Overview
 
 This project demonstrates how to build a **secure authentication flow** using **Okta’s Identity & Access Management (IAM)** platform integrated with a **Python FastAPI backend** and a **lightweight frontend** web interface.
 
 It mirrors how real organizations implement:
 
-- ✅ **Single Sign-On (SSO)** via OAuth2 + OpenID Connect
-- 🔁 **Secure redirect and token exchange**
-- 🔒 **Protected application zones** (role-based access)
-- ⚙️ **Environment-based configuration**
-- 🧩 **Modular backend routes and scalable architecture**
+-  **Single Sign-On (SSO)** via OAuth2 + OpenID Connect
+-  **Secure redirect and token exchange**
+-  **Protected application zones** (role-based access)
+-  **Environment-based configuration**
+-  **Modular backend routes and scalable architecture**
 
 ---
 
-### 💡 Why This Project Matters
+###  Why This Project Matters
 
 Modern companies — from startups to global enterprises — rely on **Identity & Access Management** to control _who accesses what, when, and how_.
 
@@ -39,7 +39,7 @@ By completing this project, you demonstrate practical IAM understanding — the 
 
 ---
 
-### 🧠 Key Learning Outcomes
+###  Key Learning Outcomes
 
 - Implemented **OAuth2 Authorization Code Flow** with Okta
 - Configured secure environment variables via `.env`
@@ -49,19 +49,19 @@ By completing this project, you demonstrate practical IAM understanding — the 
 
 ---
 
-### 📸 Project Preview
+###  Project Preview
 
-#### 🔑 Okta Hosted Sign-In
+####  Okta Hosted Sign-In
 
 When a user clicks **“Login with Okta”**, they are securely redirected to Okta’s hosted authentication page.
 
-#### 🧭 Successful Login → Redirect
+####  Successful Login → Redirect
 
 After authentication, Okta returns an authorization code to the backend, which exchanges it for `id_token` and `access_token` — granting access to the secure dashboard.
 
 ---
 
-### 🧱 Project Structure
+###  Project Structure
 
 ```
 OktaIAM-Integration/
@@ -90,22 +90,22 @@ OktaIAM-Integration/
 
 ### ⚙️ How It Works
 
-1️⃣ **User Initiates Login**  
+1️ **User Initiates Login**  
 Frontend (`index.html`) → `/api/okta/login` → Redirects to Okta’s hosted sign-in page.
 
-2️⃣ **Okta Authenticates User**  
+2️ **Okta Authenticates User**  
 Okta validates credentials (and MFA if enabled).
 
-3️⃣ **Token Exchange**  
+3️ **Token Exchange**  
 Upon success, Okta redirects to `/api/okta/callback`.  
 The backend exchanges the authorization code for an **ID Token** and **Access Token**.
 
-4️⃣ **Access Granted**  
+4️ **Access Granted**  
 User is redirected to `/secure/dashboard.html`, representing a protected area accessible only after successful login.
 
 ---
 
-### 🧰 Technologies Used
+###  Technologies Used
 
 | Layer            | Technology                        |
 | ---------------- | --------------------------------- |
@@ -117,7 +117,7 @@ User is redirected to `/secure/dashboard.html`, representing a protected area ac
 
 ---
 
-### 🧪 Run Locally
+###  Run Locally
 
 1. **Clone the repository**
    ```bash
@@ -146,7 +146,7 @@ Click Login with Okta
 
 Authenticate and view /secure/dashboard.html
 
-🔮 Future Enhancements
+ Future Enhancements
 
 Add JWT validation middleware for backend token checks
 
@@ -158,7 +158,7 @@ Containerize via Docker for cloud deployment
 
 Extend to Azure AD / Auth0 for cross-platform IAM demos
 
-🏆 Professional Value
+ Professional Value
 
 This project demonstrates industry-relevant IAM skills and architectural design principles used in cybersecurity and cloud engineering.
 It shows you understand how to bridge secure identity systems with backend APIs — a foundational skill for:
@@ -171,8 +171,6 @@ DevSecOps Specialists
 
 Zero-Trust Architects
 
-👨‍💻 Author
+Author
 
 Developed by: Abdalla Osman
-🔗 LinkedIn
-• GitHub
